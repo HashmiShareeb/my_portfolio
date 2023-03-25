@@ -2,17 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./styles/tailwind.css";
+import Home from "./components/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div
-        className="text-4xl text-emerald-500 bg-white dark:bg-gray-800 dark:text-white"
-      >
-        Hello world!
-      </div>
-    ),
+    element: <Home />,
+  },
+  {
+    path: "/projects",
+  },
+  {
+    path: "/blog",
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
