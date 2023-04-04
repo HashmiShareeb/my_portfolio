@@ -4,20 +4,28 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./styles/tailwind.css";
 import "./styles/styles.css";
 import Home from "./screens/Home";
+import Container from "./components/Container";
+import Projects from "./screens/Projects";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/about",
-  },
-  {
-    path: "/projects",
-  },
-  {
-    path: "/blog",
+    element: <Container />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/blog",
+      },
+    ],
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(

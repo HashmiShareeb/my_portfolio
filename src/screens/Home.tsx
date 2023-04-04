@@ -13,20 +13,14 @@ import Navbar from "../components/Navbar";
 export default () => {
   const [darkMode, setDarkMode] = useState(false);
   return (
-    // <div className=" dark:bg-gray-200 bg-gray-900 dark:text-white min-h-screen ">
-    //   <div className="container mx-auto px-6 py-8">
-    //     <h3 className="text-gray-700 text-4xl font-medium">Logo</h3>
-    //   </div>
-    // </div>
-    <main className="px-10 bg-gray-200 dark:bg-gray-900 min-h-screen">
+    <div>
       <section>
-        <Navbar />
         <div className="p-10 text-center">
           <div>
             <h2 className="text-5xl py-2 text-black dark:text-white font-semibold">
               Shareeb Hashmi
             </h2>
-            <h3 className="text-3xl py-2 font-semibold bg-gradient-to-r bg-clip-text text-transparent from-teal-400 to-blue-900">
+            <h3 className="text-4xl py-2 font-semibold bg-gradient-to-r bg-clip-text text-transparent from-teal-300 to-blue-700">
               Frontend Developer. Designer
             </h3>
             <p className="py-2 text-md leading-8 text-gray-800 dark:text-white mx-auto md:text-md md:w-1/2 sm:w-full">
@@ -36,7 +30,7 @@ export default () => {
               autem pariatur.
             </p>
 
-            <div className="flex justify-center items-center gap-8">
+            <div className="flex justify-center items-center gap-8 mt-8">
               {/* <button className="bg-teal-900 rounded-md p-3 font-medium text-teal-400 capitalize">
                 my projects
               </button> */}
@@ -52,7 +46,7 @@ export default () => {
               >
                 My CV
                 <span className="mx-auto pl-4">
-                  <ExternalLink />
+                  <ExternalLink size={16} />
                 </span>
               </Link>
             </div>
@@ -73,7 +67,6 @@ export default () => {
           </div> */}
         </div>
       </section>
-      {/* Section end */}
       <section className="py-10">
         <h2 className="text-3xl font-semibold">My Favourite Tools</h2>
         <div className="inline-flex items-center gap-5 justify-between mt-5">
@@ -91,7 +84,7 @@ export default () => {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 
   //dark:bg-gray-900
