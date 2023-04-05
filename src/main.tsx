@@ -6,6 +6,7 @@ import "./styles/styles.css";
 import Home from "./screens/Home";
 import Container from "./components/Container";
 import Projects from "./screens/Projects";
+import About from "./screens/About";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
+        element: <About />,
       },
       {
         path: "/projects",

@@ -21,3 +21,8 @@ html,body{
     color: #fff;
 
 }
+
+p>a{
+    text-decoration: none;
+    color: #64ffda;;
+}
