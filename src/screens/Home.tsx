@@ -5,46 +5,44 @@ import {
   Linkedin,
   Link2,
   ExternalLink,
+  Folder,
 } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default () => {
   const [darkMode, setDarkMode] = useState(false);
   return (
-    <div>
+    <div className="px-10 md:px-20 lg:px-40">
       <section className="py-20">
         <div className="container text-center">
           <div className="flex flex-col justify-center h-full mt-20">
-            <h2 className="lg:text-6xl text-4xl py-2 text-black dark:text-white font-semibold">
+            <h2 className="text-5xl py-2 text-teal-600 font-semibold dark:text-teal-400 md:text-6xl">
               Shareeb Hashmi
             </h2>
-            <h3 className="lg:text-4xl text-2xl py-2 font-semibold bg-gradient-to-r bg-clip-text text-transparent from-teal-300 to-blue-700">
+            <h3 className="text-4xl py-2 font-semibold bg-gradient-to-r bg-clip-text text-transparent from-teal-300 to-blue-700">
               Frontend Developer. Designer
             </h3>
-            <p className="py-2 lg:text-lg sm:text-md leading-8 text-gray-800 dark:text-white mx-auto md:text-md lg:w-1/2 md:w-auto sm:w-auto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae odio incidunt ab non iusto vero commodi, officiis quis
-              quasi temporibus eveniet. Quam esse ex eos cum numquam explicabo
-              autem voluptate.
-              <br />
-              <a href="https://mct.be/" target="_blank">
-                pariatur
-              </a>
-              .
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+              Frontend devoper providing services for programming and design
+              content needs. Join me down below and let's get cracking!
             </p>
 
             <div className="flex justify-center gap-8 mt-8">
               <Link
                 to="/projects"
-                className="bg-teal-900 rounded-md p-4 font-medium text-teal-400 capitalize"
+                className="bg-teal-900 inline-flex rounded-md p-4 font-medium items-center text-teal-400 capitalize hover:bg-teal-600 transition-colors"
               >
                 My Projects
+                <span className="mx-auto pl-4">
+                  <Folder size={16} />
+                </span>
               </Link>
               <Link
                 to="/projects"
-                className="capitalize font-bold inline-flex mx-3 items-center border-b-2 border-gray-600 hover:border-white hover:text-white"
+                className="capitalize font-bold inline-flex mx-3 items-center border-b-2 border-gray-600 dark:hover:border-white  dark:hover:text-white hover:text-teal-500 hover:border-teal-500 transition-colors "
               >
                 My CV
                 <span className="mx-auto pl-4">
@@ -53,18 +51,18 @@ export default () => {
               </Link>
             </div>
 
-            <div className=" text-5xl flex justify-center gap-5 mt-10">
+            <div className="mt-10 text-5xl flex justify-center gap-8 py-3 text-gray-600 dark:text-gray-400">
               <a
                 href="https://github.com/HashmiShareeb"
-                className="cursor-pointer p-2 rounded-md bg-gray-700"
+                className="cursor-pointer p-2 rounded-md bg-gray-700 text-white"
                 target="_blank"
               >
                 <Github size={26} />
               </a>
               <a
-                href=""
+                href="https://www.linkedin.com/in/shareeb-hashmi-569b38161/"
                 target="_blank"
-                className="cursor-pointer p-2 rounded-md bg-gray-700"
+                className="cursor-pointer p-2 rounded-md bg-gray-700 text-white"
               >
                 <Linkedin size={26} />
               </a>

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./styles/tailwind.css";
-import "./styles/styles.css";
+import "./styles/global.css";
 import Home from "./screens/Home";
 import Container from "./components/Container";
 import Projects from "./screens/Projects";

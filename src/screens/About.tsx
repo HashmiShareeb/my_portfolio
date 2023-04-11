@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar";
 
 export default () => {
   return (
-    <div>
-      <section className="container" id="#about">
+    <div className="px-10 md:px-20 lg:px-40">
+      {/* <section className="container py-20" id="#about">
         <h1 className="text-2xl font-semibold text-teal-500">About Me</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam</p>
         <h2 className="text-2xl">My most used technologies</h2>
@@ -16,7 +16,7 @@ export default () => {
             <p>React</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
