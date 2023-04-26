@@ -8,6 +8,7 @@ export default () => {
     <main className="bg-gray-200 dark:bg-gray-900 dark:text-white min-h-screen">
       <Navbar />
       <Outlet />
+      <Footer />
     </main>
   );
 };

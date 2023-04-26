@@ -93,28 +93,28 @@ export default () => {
       >
         <ul className="py-3 space-y-2 px-4">
           <li>
-            <a
-              href="/"
+            <Link
+              to="/"
               className="block text-white hover:text-gray-300 transition-colors duration-300"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="block text-white hover:text-gray-300 transition-colors duration-300"
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/contact"
+            <Link
+              to="/projects"
               className="block text-white hover:text-gray-300 transition-colors duration-300"
             >
-              Contact
-            </a>
+              Projects
+            </Link>
           </li>
         </ul>
       </div>
