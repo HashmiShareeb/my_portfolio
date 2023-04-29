@@ -3,6 +3,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default () => {
+  const [isActive, setIsActive] = useState(false);
+  const handleClick = () => {
+    setIsActive(!isActive);
+  };
   const [isOpen, setIsOpen] = useState(false);
   const toggleNav = () => {
     setIsOpen(!isOpen);
@@ -56,9 +60,9 @@ export default () => {
               <li>
                 <a
                   className="bg-gray-700 hover:bg-teal-900 text-white rounded-md px-4 py-2 ml-8"
-                  href="#"
+                  href="mailto:shareeb.hashmi@student.howest.be"
                 >
-                  Hire Me
+                  Contact
                 </a>
               </li>
               {/* <li className="dark:text-white bg-gray-700 hover:bg-teal-900 text-white rounded-md p-2">
@@ -70,17 +74,14 @@ export default () => {
             className="flex md:hidden gap-6
           "
           >
-            <a
-              className="bg-gray-700 hover:bg-teal-900 text-white rounded-md px-4 py-2 ml-8"
-              href="#"
-            >
-              Hire Me
+            <a className="capitalized py-2 px-4 text-white bg-gray-700 mx-auto hover:bg-teal-900 rounded-md  sm:w-auto">
+              Contact
             </a>
             {/* <button className="dark:text-white bg-gray-700 hover:bg-teal-900 text-white rounded-md p-2 transition-colors duration-300">
               <MoonIcon />
             </button> */}
             <button
-              className="text-white hover:text-gray-300 transition-colors duration-300"
+              className="text-white hover:text-gray-300 transition-all duration-500"
               onClick={toggleNav}
             >
               {isOpen ? <X size={24} /> : <AlignLeftIcon size={24} />}

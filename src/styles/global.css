@@ -24,5 +24,14 @@ html,body{
 
 p>a{
     text-decoration: none;
-    color: #64ffda;;
+    color: #64ffda;
 }
+
+/* body::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color:transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #134e4a;
+} */

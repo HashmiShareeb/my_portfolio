@@ -1,5 +1,5 @@
 import { ExternalLink, Folder, GithubIcon } from "lucide-react";
-import ProjectContainer from "../components/ProjectContainer";
+import ProjectContainer from "../components/ProjectDetail";
 
 export default () => {
   return (
