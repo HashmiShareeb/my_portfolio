@@ -16,11 +16,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ProjectContainer from "../components/ProjectDetail";
+
 import Projects from "../components/ProjectsCards";
 
 export default () => {
-  const [darkMode, setDarkMode] = useState(false);
   return (
     <div className="px-10 md:px-20 lg:px-40">
       <section className="lg:py-20">
@@ -37,7 +36,7 @@ export default () => {
               building beautiful and functional user interfaces.
             </p>
 
-            <div className="flex justify-center gap-8 mt-8" >
+            <div className="flex justify-center gap-8 mt-8">
               <Link
                 to="/projects"
                 className="bg-teal-900 inline-flex rounded-md p-4 font-medium items-center text-teal-400 capitalize hover:bg-teal-600 transition-colors"

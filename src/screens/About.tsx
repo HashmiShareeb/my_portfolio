@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import ProjectContainer from "../components/ProjectDetail";
 
 export default () => {
   return (
     <div className="px-10 md:px-20 lg:px-40">
       <section className="py-20">
-        <h3 className="text-3xl font-semibold text-teal-500">About Me</h3>
+        <h3 className="text-4xl py-2 font-semibold bg-gradient-to-r bg-clip-text text-transparent from-teal-300 to-blue-500">
+          About me
+        </h3>
         <p className="mt-4 leading-8">
           Hey there! My name is
           <span className="font-semibold text-teal-500"> Shareeb Hashmi </span>I

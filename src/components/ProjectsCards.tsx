@@ -18,10 +18,10 @@ export default () => {
           </p>
         </div>
       </div> */}
-      <div className="inline-flex w-full my-4 lg:my-0">
+      <div className="inline-flex w-full my-4 lg:my-0 group hover:text-teal-500 transition-colors duration-500">
         <Link
           to="/projects"
-          className="inline-flex items-end text-end justify-end w-full"
+          className="inline-flex items-end text-end justify-end w-full group-hover:text-teal-500 transition-colors duration-500 "
         >
           View all projects <ArrowRight />
         </Link>
@@ -33,13 +33,22 @@ export default () => {
             src="../public/themovieapp.png"
             alt="Placeholder Image"
           />
-          <div className="px-6 py-4 bg-gray-700 dark:text-white">
+          <div className="px-6 py-4 bg-white dark:bg-slate-800 dark:text-white">
             <div className="font-semibold text-xl my-2">MovieApp</div>
             <p className=" text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
             </p>
           </div>
+        </div>
+        <div className="group bg-gray-200 rounded-lg p-4 hover:bg-gray-300">
+          <h2 className="text-lg font-medium mb-2">Group hover example</h2>
+          <p className="text-gray-700 mb-4">
+            This is an example of using group hover in Tailwind CSS.
+          </p>
+          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg group-hover:bg-blue-700">
+            Click me!
+          </button>
         </div>
       </div>
     </section>

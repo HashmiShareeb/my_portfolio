@@ -48,13 +48,13 @@ export default () => {
           <div className="hidden md:block">
             <ul className="flex items-center gap-8">
               <li className="dark:text-white">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="dark:text-white">
                 <Link to="/about">About</Link>
               </li>
               <li className="dark:text-white">
                 <Link to="/projects">Projects</Link>
-              </li>
-              <li className="dark:text-white">
-                <Link to="/blog">Blog</Link>
               </li>
 
               <li>

@@ -1,11 +1,13 @@
 import { ExternalLink, Folder, GithubIcon } from "lucide-react";
-import ProjectContainer from "../components/ProjectDetail";
+import React from "react";
 
 export default () => {
   return (
     <div className="px-10 md:px-20 lg:px-40">
       <section className="py-20">
-        <h3 className="text-2xl font-semibold text-teal-500">My Projects</h3>
+        <h3 className="text-4xl py-2 font-semibold bg-gradient-to-r bg-clip-text text-transparent from-teal-300 to-blue-500">
+         My Projects
+        </h3>
         <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
           Some of my projects that I have worked on. Some of them are still in
           progress!
