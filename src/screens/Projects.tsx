@@ -1,12 +1,20 @@
-import { ExternalLink, Folder, GithubIcon } from "lucide-react";
+import {
+  ExternalLink,
+  Folder,
+  GitBranch,
+  GitBranchIcon,
+  GithubIcon,
+} from "lucide-react";
 import React from "react";
+import movieApp from "/public/themovieapp.png";
+import placeholder from "/public/placeholder.webp";
 
 export default () => {
   return (
     <div className="px-10 md:px-20 lg:px-40">
       <section className="py-20">
         <h3 className="text-4xl py-2 font-semibold bg-gradient-to-r bg-clip-text text-transparent from-teal-300 to-blue-500">
-         My Projects
+          My Projects
         </h3>
         <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
           Some of my projects that I have worked on. Some of them are still in
@@ -14,11 +22,7 @@ export default () => {
         </p>
         <span className="flex flex-col gap-10 py-10 lg:flex-row items-center rounded-md hover:text-teal-500 duration-500 transition-colors">
           <div className="basis-1/3 flex-1">
-            <img
-              src="../themovieapp.png"
-              className="object-cover rounded-md"
-              alt=""
-            />
+            <img src={movieApp} className="object-cover rounded-md" alt="" />
           </div>
           <div className="basis-1/3 flex-1 ">
             <h1 className="capitalize  text-lg font-semibold">The movie app</h1>
@@ -62,11 +66,7 @@ export default () => {
         </span>
         <span className="flex flex-col gap-10 py-10 lg:flex-row-reverse items-center rounded-md hover:text-teal-500 duration-500 transition-colors">
           <div className="basis-1/3 flex-1">
-            <img
-              src="../placeholder.webp"
-              className="object-cover rounded-md"
-              alt=""
-            />
+            <img src={placeholder} className="object-cover rounded-md" alt="" />
           </div>
           <div className="basis-1/3 flex-1 ">
             <h1 className="capitalize text-lg font-semibold">
@@ -111,15 +111,193 @@ export default () => {
             </div>
           </div>
         </span>
+        {/* <span className="flex flex-col gap-10 py-10 lg:flex-row items-center rounded-md hover:text-teal-500 duration-500 transition-colors">
+          <div className="basis-1/3 flex-1">
+            <img
+              src="../themovieapp.png"
+              className="object-cover rounded-md"
+              alt=""
+            />
+          </div>
+          <div className="basis-1/3 flex-1 ">
+            <h1 className="capitalize  text-lg font-semibold">
+              Micheal Naessens
+            </h1>
+            <p className="text-sm  font-normal text-gray-800 dark:text-white leading-6 ">
+              One of my first projects i worked on in my intership at{" "}
+              <span>Exsited</span>, a website for a pshygolist. I worked on this
+              project with a team of 3 people. I was responsible for the
+              frontend of the website. The website is made with{" "}
+              <span>React</span> and <span>Typescript</span>. The website is
+              also responsive for mobile devices.
+            </p>
+            <div className="flex gap-4 mt-5">
+              <a
+                href="https://hashmishareeb.github.io/shareebhashmi.github.io/index.html"
+                target="_blank"
+                className="hover:cursor-pointer"
+              >
+                <ExternalLink />
+              </a>
+              <a
+                href="https://github.com/HashmiShareeb/shareebhashmi.github.io"
+                target="_blank"
+                className="hover:cursor-pointer"
+              >
+                <GithubIcon />
+              </a>
+            </div>
+            <div className="flex mt-5 gap-4 dark:text-white">
+              <h5 className="text-sm font-light">HTML</h5>
+              <h5 className="text-sm font-light">SCSS</h5>
+              <h5 className="text-sm font-light">SQL</h5>
+              <h5 className="text-sm font-light">UIKit</h5>
+              <h5 className="text-sm font-light">Bootstrap</h5>
+              <h5 className="text-sm font-light">PHP</h5>
+              <h5 className="text-sm font-light">ProccesWire</h5>
+            </div>
+          </div>
+        </span> */}
+        <span className="flex flex-col gap-10 py-10 lg:flex-row items-center rounded-md hover:text-teal-500 duration-500 transition-colors">
+          <div className="basis-1/3 flex-1">
+            <img
+              src="../themovieapp.png"
+              className="object-cover rounded-md"
+              alt=""
+            />
+          </div>
+          <div className="basis-1/3 flex-1 ">
+            <h1 className="capitalize  text-lg font-semibold">
+              Job finder app
+            </h1>
+            <p className="text-sm  font-normal text-gray-800 dark:text-white leading-6 ">
+              An job finder app exlcusive for the webdevelopers and UI/UX
+              designers, this app is made on React Native with the use of a
+              framework called Native Base. Users can look up every job in the
+              IT sector. The app is made with the use of the JSearch API.
+            </p>
+            <div className="flex gap-4 mt-5">
+              <a
+                href="https://hashmishareeb.github.io/shareebhashmi.github.io/index.html"
+                target="_blank"
+                className="hover:cursor-pointer dark:text-white"
+              >
+                <ExternalLink />
+              </a>
+              <a
+                href="https://github.com/HashmiShareeb/shareebhashmi.github.io"
+                target="_blank"
+                className="hover:cursor-pointer dark:text-white"
+              >
+                <GithubIcon />
+              </a>
+            </div>
+            <div className="flex mt-5 gap-4 dark:text-white">
+              <h5 className="text-sm font-light">React-Native</h5>
+              <h5 className="text-sm font-light">Native Base</h5>
+              <h5 className="text-sm font-light">TypeScript</h5>
+            </div>
+            <button className="inline-flex dark:bg-gray-700 bg-gray-100 dark:text-white text-black rounded-md py-2 p-2 mt-4">
+              {" "}
+              <GitBranch className="pr-2" />
+              In development
+            </button>
+          </div>
+        </span>
         <h3 className="text-2xl font-semibold text-teal-500">
-          My other mini projects
+          Some other projects
         </h3>
 
-        <div className="flex mt-5">
-          <div className="bg-teal-900 hover:scale-110 transition-all duration-500  p-6 hover:cursor-pointer">
-            <Folder />
-            <h2>Roman Numbers</h2>
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="dark:bg-gray-800 bg-white rounded-md p-5  col-span-1 row-span-1">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <div className="flex gap-4 items-center">
+                <Folder />
+                <h2 className="text-md font-semibold my-4">Roman Numbers</h2>
+              </div>
+              <p className="text-sm">
+                A simple converter app that converts arabic numbers to roman
+                numbers and vice versa. Made on React Native.
+              </p>
+              <div className="flex mt-4 gap-4">
+                <button className="inline-flex dark:bg-gray-700 bg-gray-100 e rounded-md py-2 p-2 mt-4">
+                  {" "}
+                  React-Native
+                </button>
+                <button className="inline-flex dark:bg-gray-700 bg-gray-100  rounded-md py-2 p-2 mt-4">
+                  {" "}
+                  Expo
+                </button>
+              </div>
+            </a>
           </div>
+          <div className="dark:bg-gray-800 bg-white rounded-md p-5 overflow-hidden col-span-1 row-span-2">
+            <div className="flex gap-4 items-center">
+              <Folder />
+              <h2 className="text-md font-semibold my-4">Quotes App</h2>
+            </div>
+            <p className="text-sm">
+              I recently created a quote app using Xamarin Forms and my own API
+              with Azure Functions. The app provides users with an extensive
+              collection of famous quotes from various sources. The app's clean
+              and intuitive interface makes it easy to navigate and search for
+              quotes, and the API backend ensures a seamless and fast user
+              experience. Thanks to Azure Functions, the app can handle high
+              traffic loads without compromising on performance. The app has
+              been well received by users, and I am excited to continue
+              improving it with new features and functionality.
+              <div className="flex mt-4 gap-4">
+                <button className="inline-flex  dark:bg-gray-700 bg-gray-100   rounded-md py-2 p-2 mt-4">
+                  {" "}
+                  Xamrin Forms
+                </button>
+                <button className="inline-flex  dark:bg-gray-700 bg-gray-100   rounded-md py-2 p-2 mt-4">
+                  {" "}
+                  C#
+                </button>
+                <button className="inline-flex  dark:bg-gray-700 bg-gray-100   rounded-md py-2 p-2 mt-4">
+                  {" "}
+                  Azure Functions
+                </button>
+                <button className="inline-flex  dark:bg-gray-700 bg-gray-100   rounded-md py-2 p-2 mt-4">
+                  {" "}
+                  .NET
+                </button>
+              </div>
+            </p>
+          </div>
+          {/* <div className="bg-gray-100 rounded-lg overflow-hidden col-span-1 row-span-2">
+            <h2 className="text-xl font-semibold mb-2">Card 3</h2>
+            <p className="text-gray-700">
+              Nullam faucibus, metus sed pellentesque consequat, est velit
+              ullamcorper nisl, sed tristique turpis velit sit amet dolor. Morbi
+              malesuada auctor justo id facilisis.
+            </p>
+          </div>
+          <div className="bg-gray-100 rounded-lg overflow-hidden col-span-1 row-span-1">
+            <h2 className="text-xl font-semibold mb-2">Card 4</h2>
+            <p className="text-gray-700">
+              Donec quis fermentum lorem. Maecenas eleifend lacus eu ipsum
+              congue, at faucibus augue molestie. Sed gravida velit in nibh
+              luctus vehicula.
+            </p>
+          </div>
+          <div className="bg-gray-100 rounded-lg overflow-hidden col-span-1 row-span-1">
+            <h2 className="text-xl font-semibold mb-2">Card 5</h2>
+            <p className="text-gray-700">
+              Fusce in velit aliquam, viverra augue sed, consectetur tortor.
+              Fusce vitae sem at erat bibendum auctor. Pellentesque id tellus
+              ullamcorper, placerat nisl sed, lobortis turpis.
+            </p>
+          </div>
+          <div className="bg-gray-100 rounded-lg overflow-hidden col-span-1 row-span-1">
+            <h2 className="text-xl font-semibold mb-2">Card 6</h2>
+            <p className="text-gray-700">
+              Praesent euismod sem sit amet lorem consectetur lobortis. Duis vel
+              lorem eu nibh convallis dignissim. Duis vel tellus vel libero
+              aliquet commodo.
+            </p>
+          </div> */}
         </div>
       </section>
     </div>

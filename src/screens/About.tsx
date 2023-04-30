@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import { MailCheckIcon, MailIcon } from "lucide-react";
 
 export default () => {
   return (
@@ -21,7 +22,14 @@ export default () => {
           excited to apply my skills and continue to learn and grow in the field
           of programming.
         </p>
-        <h2 className="text-2xl">My most used technologies</h2>
+        <h2 className="text-2xl">Contact</h2>
+        <p className="mt-4 leading-8">
+          <span className="font-semibold text-teal-500 inline-block gap-4">
+            {" "}
+            <MailIcon className="inline-block" />{" "}
+            <a href="mailto:">shareeb.hashmi@student.howest.be</a>{" "}
+          </span>
+        </p>
       </section>
     </div>
   );

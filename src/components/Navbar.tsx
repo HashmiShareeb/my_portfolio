@@ -1,4 +1,11 @@
-import { AlignLeftIcon, Menu, MoonIcon, X } from "lucide-react";
+import {
+  AlignLeftIcon,
+  Github,
+  Linkedin,
+  Menu,
+  MoonIcon,
+  X,
+} from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -47,7 +54,7 @@ export default () => {
           </div>
           <div className="hidden md:block">
             <ul className="flex items-center gap-8">
-              <li className="dark:text-white">
+              <li className="dark:text-white ">
                 <Link to="/">Home</Link>
               </li>
               <li className="dark:text-white">
@@ -66,7 +73,12 @@ export default () => {
                 </a>
               </li>
               {/* <li className="dark:text-white bg-gray-700 hover:bg-teal-900 text-white rounded-md p-2">
-                <MoonIcon />
+                <a href="">
+                  <Github size={24} />
+                </a>
+              </li>
+              <li className="dark:text-white bg-gray-700 hover:bg-teal-900 text-white rounded-md p-2">
+                <Linkedin size={24} />
               </li> */}
             </ul>
           </div>

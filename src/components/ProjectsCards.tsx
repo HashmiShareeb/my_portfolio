@@ -41,15 +41,6 @@ export default () => {
             </p>
           </div>
         </div>
-        <div className="group bg-gray-200 rounded-lg p-4 hover:bg-gray-300">
-          <h2 className="text-lg font-medium mb-2">Group hover example</h2>
-          <p className="text-gray-700 mb-4">
-            This is an example of using group hover in Tailwind CSS.
-          </p>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg group-hover:bg-blue-700">
-            Click me!
-          </button>
-        </div>
       </div>
     </section>
   );

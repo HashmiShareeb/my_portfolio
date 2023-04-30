@@ -57,23 +57,6 @@ export default () => {
                 </span>
               </a>
             </div>
-
-            <div className="mt-10 text-5xl flex justify-center gap-8 py-3 text-gray-600 dark:text-gray-400">
-              <a
-                href="https://github.com/HashmiShareeb"
-                className="cursor-pointer p-2 rounded-md bg-gray-700 text-white"
-                target="_blank"
-              >
-                <Github size={26} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/shareeb-hashmi-569b38161/"
-                target="_blank"
-                className="cursor-pointer p-2 rounded-md bg-gray-700 text-white"
-              >
-                <Linkedin size={26} />
-              </a>
-            </div>
           </div>
           {/* <div>
             <h1 className="my-5 text-center text-indigo-500">
@@ -81,7 +64,7 @@ export default () => {
             </h1>
           </div> */}
         </div>
-        <Projects />
+        {/* <Projects /> */}
       </section>
     </div>
   );
