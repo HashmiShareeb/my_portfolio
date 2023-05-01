@@ -93,7 +93,7 @@ export default () => {
               <MoonIcon />
             </button> */}
             <button
-              className="text-white hover:text-gray-300 transition-all duration-500"
+              className="dark:text-white hover:text-teal-200 transition-all duration-500"
               onClick={toggleNav}
             >
               {isOpen ? <X size={24} /> : <AlignLeftIcon size={24} />}
@@ -102,13 +102,15 @@ export default () => {
         </div>
       </div>
       <div
-        className={`${isOpen ? "" : "hidden"} md:hidden bg-gray-100 dark:bg-gray-900 text-white`}
+        className={`${
+          isOpen ? "" : "hidden"
+        } md:hidden  dark:bg-gray-900 dark:text-white`}
       >
         <ul className="py-3 space-y-2 px-4">
           <li>
             <Link
               to="/"
-              className="block text-white hover:text-gray-300 transition-colors duration-300"
+              className="block dark:text-white hover:text-teal-500 transition-colors duration-300"
             >
               Home
             </Link>
@@ -116,7 +118,7 @@ export default () => {
           <li>
             <Link
               to="/about"
-              className="block text-white hover:text-gray-300 transition-colors duration-300"
+              className="block dark:text-whitetext-white hover:text-teal-500 transition-colors duration-300"
             >
               About
             </Link>
@@ -124,7 +126,7 @@ export default () => {
           <li>
             <Link
               to="/projects"
-              className="block text-white hover:text-gray-300 transition-colors duration-300"
+              className="block dark:text-white hover:text-teal-500 transition-colors duration-300"
             >
               Projects
             </Link>
