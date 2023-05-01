@@ -47,7 +47,7 @@ export default () => {
                 </span>
               </Link>
               <a
-                href=""
+                href="/cvshareebhashmi2022-updatedMCT.pdf"
                 target="_blank"
                 className="capitalize font-bold inline-flex mx-3 items-center border-b-2 border-gray-600 dark:hover:border-white  dark:hover:text-white hover:text-teal-500 hover:border-teal-500 transition-colors "
               >
@@ -58,12 +58,8 @@ export default () => {
               </a>
             </div>
           </div>
-          {/* <div>
-            <h1 className="my-5 text-center text-indigo-500">
-              Placeholder img comes here
-            </h1>
-          </div> */}
         </div>
+
         {/* <Projects /> */}
       </section>
     </div>
