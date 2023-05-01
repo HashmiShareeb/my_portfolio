@@ -102,7 +102,7 @@ export default () => {
         </div>
       </div>
       <div
-        className={`${isOpen ? "" : "hidden"} md:hidden bg-gray-900 text-white`}
+        className={`${isOpen ? "" : "hidden"} md:hidden bg-gray-100 dark:bg-gray-900 text-white`}
       >
         <ul className="py-3 space-y-2 px-4">
           <li>
