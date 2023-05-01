@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "localforage": "^1.10.0",
     "lucide-react": "^0.127.0",
     "match-sorter": "^6.3.1",

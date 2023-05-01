@@ -62,7 +62,7 @@ export default () => {
         <span className="flex flex-col gap-10 py-10 lg:flex-row-reverse items-center rounded-md hover:text-teal-500 duration-500 transition-colors">
           <div className="basis-1/3 flex-1">
             <img
-              src="../themovieapp.png"
+              src={placeholder}
               className="object-cover rounded-md"
               alt=""
             />
