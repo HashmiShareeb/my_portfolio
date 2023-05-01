@@ -29,7 +29,7 @@ export default () => {
               Shareeb Hashmi
             </h2>
             <h3 className="text-4xl py-2 font-semibold bg-gradient-to-r bg-clip-text text-transparent from-teal-300 to-blue-500">
-              Frontend Developer. Designer
+              WebDeveloper
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Web Developer and recent graduate in MIT, with a passion for
