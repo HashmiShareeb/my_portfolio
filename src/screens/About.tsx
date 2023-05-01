@@ -7,8 +7,8 @@ export default () => {
   return (
     <div className="px-10 md:px-20 lg:px-40">
       <section className="py-20">
-        <div className="flex justify-between gap-4 ">
-          <div className="w-1/2">
+        <div className="flex justify-between gap-4 flex-col-reverse lg:flex-row">
+          <div className="lg:w-1/2 w-full">
             <h3 className="text-4xl py-2 font-semibold bg-gradient-to-r bg-clip-text text-transparent from-teal-300 to-blue-500">
               About me
             </h3>

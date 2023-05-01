@@ -86,7 +86,7 @@ export default () => {
             className="flex md:hidden gap-6
           "
           >
-            <a className="capitalized py-2 px-4 text-white bg-gray-700 mx-auto hover:bg-teal-900 rounded-md  sm:w-auto">
+            <a className="capitalized py-2 px-4 text-white bg-gray-700 mx-auto hover:bg-teal-900 rounded-md hidden md:block  sm:w-auto">
               Contact
             </a>
             {/* <button className="dark:text-white bg-gray-700 hover:bg-teal-900 text-white rounded-md p-2 transition-colors duration-300">
@@ -102,7 +102,7 @@ export default () => {
         </div>
       </div>
       <div
-        className={`${isOpen ? "" : "hidden"} md:hidden bg-gray-700 text-white`}
+        className={`${isOpen ? "" : "hidden"} md:hidden bg-gray-900 text-white`}
       >
         <ul className="py-3 space-y-2 px-4">
           <li>
@@ -128,6 +128,15 @@ export default () => {
             >
               Projects
             </Link>
+          </li>
+          <li>
+            <a
+              href="cvshareebhashmi2022-updatedMCT.pdf"
+              target="_blank"
+              className="capitalized py-2 px-2 text-start text-white bg-gray-700  hover:bg-teal-900 rounded-md sm:w-auto"
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>
