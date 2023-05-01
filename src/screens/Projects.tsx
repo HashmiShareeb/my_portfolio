@@ -75,14 +75,14 @@ export default () => {
             </p>
             <div className="flex gap-4 mt-5">
               <a
-                href="https://hashmishareeb.github.io/movieapp/"
+                href="#"
                 target="_blank"
                 className="hover:cursor-pointer dark:text-white"
               >
                 <ExternalLink />
               </a>
               <a
-                href="https://github.com/HashmiShareeb/shareebhashmi.github.io"
+                href="#"
                 target="_blank"
                 className="hover:cursor-pointer dark:text-white"
               >
@@ -107,14 +107,18 @@ export default () => {
 
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="dark:bg-gray-800 bg-white rounded-md p-5  col-span-1 row-span-1">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/HashmiShareeb/labo04-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="flex gap-4 items-center">
                 <Folder />
-                <h2 className="text-md font-semibold my-4">Roman Numbers</h2>
+                <h2 className="text-md font-semibold my-4">Colors</h2>
               </div>
               <p className="text-sm leading-6">
-                A simple converter app that converts arabic numbers to roman
-                numbers and vice versa. Made on React Native.
+                A simple color palette app that shows the color and the hex
+                value of the color. The app is made with React Native.
               </p>
             </a>
           </div>
@@ -161,30 +165,6 @@ export default () => {
               </p>
             </div>
           </a>
-          <div className="bg-gray-100 rounded-lg overflow-hidden col-span-1 row-span-1 hidden">
-            <h2 className="text-xl font-semibold mb-2">Card 4</h2>
-            <p className="text-sm">
-              Donec quis fermentum lorem. Maecenas eleifend lacus eu ipsum
-              congue, at faucibus augue molestie. Sed gravida velit in nibh
-              luctus vehicula.
-            </p>
-          </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden col-span-1 row-span-1 hidden">
-            <h2 className="text-xl font-semibold mb-2">Card 5</h2>
-            <p className="text-sm">
-              Fusce in velit aliquam, viverra augue sed, consectetur tortor.
-              Fusce vitae sem at erat bibendum auctor. Pellentesque id tellus
-              ullamcorper, placerat nisl sed, lobortis turpis.
-            </p>
-          </div>
-          <div className="bg-gray-100 rounded-lg overflow-hidden col-span-1 row-span-1 hidden">
-            <h2 className="text-xl font-semibold mb-2">Card 6</h2>
-            <p className="text-sm">
-              Praesent euismod sem sit amet lorem consectetur lobortis. Duis vel
-              lorem eu nibh convallis dignissim. Duis vel tellus vel libero
-              aliquet commodo.
-            </p>
-          </div>
         </div>
       </section>
     </div>
