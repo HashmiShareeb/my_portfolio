@@ -47,7 +47,7 @@ export default () => {
                 </span>
               </Link>
               <a
-                href="/cvshareebhashmi2022-updatedMCT.pdf"
+                href="/CV-shareeb_2023.pdf"
                 target="_blank"
                 className="capitalize font-bold inline-flex mx-3 items-center border-b-2 border-gray-600 dark:hover:border-white  dark:hover:text-white hover:text-teal-500 hover:border-teal-500 transition-colors "
               >
