@@ -1,7 +1,14 @@
 import React from "react";
-import { ExternalLink, Folder, GitBranch, GithubIcon } from "lucide-react";
+import {
+  ExternalLink,
+  File,
+  Folder,
+  GitBranch,
+  GithubIcon,
+} from "lucide-react";
 import movieApp from "/themovieapp.png";
 import placeholder from "/placeholder.webp";
+import digitalpatienttwin from "/digitalpatienttwin.jpeg";
 
 export default () => {
   return (
@@ -61,44 +68,47 @@ export default () => {
 
         <span className="flex flex-col gap-10 py-10 lg:flex-row-reverse items-center rounded-md hover:text-teal-500 duration-500 transition-colors">
           <div className="basis-1/3 flex-1">
-            <img src={placeholder} className="object-cover rounded-md" alt="" />
+            <img
+              src={digitalpatienttwin}
+              className="object-cover rounded-md"
+              alt=""
+            />
           </div>
           <div className="basis-1/3 flex-1 ">
             <h1 className="capitalize  text-lg font-semibold">
-              Job finder app
+              Digital Patient Twin
             </h1>
             <p className="text-sm  font-normal text-gray-800 dark:text-white leading-6 ">
-              An job finder app exlcusive for the webdevelopers and UI/UX
-              designers, this app is made on React Native with the use of a
-              framework called Native Base. Users can look up every job in the
-              IT sector. The app is made with the use of the JSearch API.
+              This is a team project for Delaware. The Digital Patient twin is a
+              monitoring dashboard which allows the doctors to view real time
+              data of the patient, doctors can search patients after adding them
+              in. Unfortunately i can not display the code online because of the
+              company policy.
             </p>
             <div className="flex gap-4 mt-5">
               <a
-                href="#"
+                href="/FA02.pdf"
                 target="_blank"
-                className="hover:cursor-pointer dark:text-white"
+                className="hover:cursor-pointer "
               >
-                <ExternalLink />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                className="hover:cursor-pointer dark:text-white"
-              >
-                <GithubIcon />
+                <File />
               </a>
             </div>
             <div className="flex mt-5 gap-4 dark:text-white">
-              <h5 className="text-sm font-light">React-Native</h5>
-              <h5 className="text-sm font-light">Native Base</h5>
+              <h5 className="text-sm font-light">VueJS Nuxt</h5>
               <h5 className="text-sm font-light">TypeScript</h5>
+              <h5 className="text-sm font-light">.NET</h5>
+              <h5 className="text-sm font-light">Azure</h5>
+              <h5 className="text-sm font-light">CosmosDB</h5>
+              <h5 className="text-sm font-light">Dapr</h5>
+              <h5 className="text-sm font-light">Microservices</h5>
+              <h5 className="text-sm font-light">Pub-Sub</h5>
             </div>
-            <button className="inline-flex dark:bg-gray-700 bg-gray-100 dark:text-white text-black rounded-md py-2 p-2 mt-4">
+            {/* <button className="inline-flex dark:bg-gray-700 bg-gray-100 dark:text-white text-black rounded-md py-2 p-2 mt-4">
               {" "}
               <GitBranch className="pr-2" />
               In development
-            </button>
+            </button> */}
           </div>
         </span>
         <h3 className="text-2xl font-semibold text-teal-500">
@@ -106,22 +116,6 @@ export default () => {
         </h3>
 
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="dark:bg-gray-800 bg-white rounded-md p-5  col-span-1 row-span-1">
-            <a
-              href="https://github.com/HashmiShareeb/labo04-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="flex gap-4 items-center">
-                <Folder />
-                <h2 className="text-md font-semibold my-4">Colors</h2>
-              </div>
-              <p className="text-sm leading-6">
-                A simple color palette app that shows the color and the hex
-                value of the color. The app is made with React Native.
-              </p>
-            </a>
-          </div>
           <div className="dark:bg-gray-800 bg-white rounded-md p-5 overflow-hidden col-span-1 row-span-1">
             <div className="flex gap-4 items-center">
               <Folder />
@@ -133,10 +127,7 @@ export default () => {
               collection of famous quotes from various sources. The app's clean
               and intuitive interface makes it easy to navigate and search for
               quotes, and the API backend ensures a seamless and fast user
-              experience. Thanks to Azure Functions, the app can handle high
-              traffic loads without compromising on performance. The app has
-              been well received by users, and I am excited to continue
-              improving it with new features and functionality.
+              experience. Thanks to Azure Functions.
               <div className="flex mt-4 gap-4"></div>
             </p>
           </div>
