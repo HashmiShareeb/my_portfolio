@@ -52,12 +52,8 @@ export default () => {
             <div className="flex mt-5 gap-4 dark:text-white">
               <h5 className="text-sm font-light">VueJS Nuxt</h5>
               <h5 className="text-sm font-light">TypeScript</h5>
-              <h5 className="text-sm font-light">.NET</h5>
               <h5 className="text-sm font-light">Azure</h5>
               <h5 className="text-sm font-light">CosmosDB</h5>
-              <h5 className="text-sm font-light">Dapr</h5>
-              <h5 className="text-sm font-light">Microservices</h5>
-              <h5 className="text-sm font-light">Pub-Sub</h5>
             </div>
             {/* <button className="inline-flex dark:bg-gray-700 bg-gray-100 dark:text-white text-black rounded-md py-2 p-2 mt-4">
               {" "}
